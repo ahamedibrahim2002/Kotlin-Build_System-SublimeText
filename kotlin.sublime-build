@@ -1,0 +1,6 @@
+{
+  "cmd":[ "kotlinc \"$file_name\" -include-runtime -d \"$file_base_name.jar\" && java -jar \"$file_base_name.jar\"<input.txt > output.txt"],
+  "shell": true,
+  "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+  "selector": "source.kt"
+}
